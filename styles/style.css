@@ -161,16 +161,15 @@
 
 .main__title {
   font-family: var(--main-font);
+  font-weight: bold;
   display: flex;
   border: 2px solid var(--font-and-border-color);
-  font-weight: var(--title-font-weight);
   font-size: 18px;
   line-height: normal;
   font-style: normal;
   background-color: var(--bg-color);
   word-wrap: break-word;
   white-space: normal;
-  font-weight: bold;
   padding: 4px 12px 3px 6px;
 }
 
@@ -208,6 +207,8 @@
 
 /* картинка */
 .img_item {
+  border-left: 2px solid var(--font-and-border-color);
+  border-right: 2px solid var(--font-and-border-color);
   display: block;
   width: 100%;
   object-fit: cover;
@@ -253,7 +254,7 @@
 
 /* восьмая карточка */
 .img_filter-eight {
-  filter: blur(5px);
+  filter: blur(2px);
 }
 
 .section_container-text {
