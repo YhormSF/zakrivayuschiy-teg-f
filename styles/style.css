@@ -13,12 +13,19 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  }
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-
-  font-feature-settings: "wdht" var(--main-font-weight), "slnt" normal;
+  font-family: var(--main-font);
+  font-variation-settings: 
+   "wdht" var(--main-font-weight),
+   "slnt" normal;
   color: var(--font-and-border-color);
   background-color: var(--bg-color);
 
@@ -464,11 +471,6 @@
   transform: scaleX(1);
 }
 
-/* заливка иконки дискеты */
-
-/* .floppy-container {
-}  */
-
 /* заливка svg */
 .svg-memory {
   position: relative;
@@ -493,8 +495,6 @@
 
   width: 357px;
   height: 193px;
-  padding: 0px 0px 0px 0px;
-  padding: 11px 28px 8px 35px;
   padding: 6px 30px 6px 30px;
 }
 
