@@ -25,6 +25,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 
+  /* min-inline-size: 375px; */
   max-inline-size: 696px;
   margin: 0 auto;
 
