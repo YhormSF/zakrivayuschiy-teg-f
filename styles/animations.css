@@ -93,27 +93,27 @@ opacity: 1;
 
 /* при зажатии */
 .heart:active .core {
-  fill: red;
+  fill: var(--heart-liked);
   transition: fill 0.3s linear 0.03s;
 }
 
 .heart:active .main-body {
-  fill: red;
+  fill: var(--heart-liked);
   transition: fill 0.3s linear 0.05s;
 }
 
 /* при нажатии */
 
 .like-icon.is-liked .core {
-  fill: red;
+  fill: var(--heart-liked);
 }
 
 .like-icon.is-liked .main-body {
-  fill: red;
+  fill: var(--heart-liked);
 }
 
 .like-icon.is-liked .contour {
-  fill: red;
+  fill: var(--heart-liked);
   transition: fill 0.3s linear 0.06s;
 }
 
@@ -123,7 +123,7 @@ opacity: 1;
 }
 
 .like-icon.is-liked .sparks {
-  fill: red;
+  fill: var(--heart-liked);
   animation: cool-sparks 0.3s ease-in 0.3s;
 }
 

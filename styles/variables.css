@@ -6,6 +6,7 @@
 --accidental-font: 'PressStart2P-Regular';
 /* у себя по перфект пикселю 26% */
 --content-margin: 27%;
+--heart-liked: red;
 
 /* светлая основная тема */
   --gradient-horizontal-color: #d3d3d3;
