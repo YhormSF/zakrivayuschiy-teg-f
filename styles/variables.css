@@ -5,5 +5,21 @@
 --main-font: 'Inter-Variable';
 --accidental-font: 'PressStart2P-Regular';
 /* у себя по перфект пикселю 26% */
---content-margin: 27%
+--content-margin: 27%;
+
+/* светлая основная тема */
+  --gradient-horizontal-color: #d3d3d3;
+  --gradient-vertical-color-start: #e7e7e7;
+  --gradient-vertical-color-end: #1a1a1a;
+
+  --bg-color: white;
+  --color-accent: #000;
+
+  --difference-color: white;
+
+  --heart-contour: black;
+
+  --font-and-border-color: black;
+  --title-font-weight: 700px;
+  --main-font-weight: 400px;
 }
