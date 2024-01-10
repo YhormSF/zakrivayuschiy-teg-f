@@ -54,11 +54,9 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   font-weight: 400;
   margin: 15% 0;
-  display: grid;
   justify-items: center;
   align-items: center;
   grid-template-rows: 2fr 1fr 1fr;
@@ -505,5 +503,4 @@
   .svg-memory {
     scale: 1;
   }
-
 }
