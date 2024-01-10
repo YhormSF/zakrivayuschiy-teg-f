@@ -16,7 +16,6 @@
   --color-accent: #000;
 
   --difference-color: white;
-  --label-color: white;
 
   --heart-contour: black;
 
@@ -36,8 +35,7 @@
     --color-accent: #000;
   
     --difference-color: white;
-    --label-color: white;
-  
+
     --heart-contour: black;
   
     --font-and-border-color: black;
@@ -56,21 +54,12 @@
   --color-accent: #00CC14;
 
   --difference-color: #00CC14;
-  --label-color: #00CC14;
 
   --heart-contour: #00CC14;
-
 
   --font-and-border-color: #00CC14;
   --title-font-weight: 785px;
   --main-font-weight: 465px;
-
-  /* отмена обводки */
-  .main__section-label {
-    text-shadow: none;
-    -webkit-text-stroke: 0;
-    text-stroke: 0;
-  }
 }
 
 /* авто темная, дублирование */
@@ -84,25 +73,11 @@
     --color-accent: #00CC14;
   
     --difference-color: #00CC14;
-    --label-color: #00CC14;
   
     --heart-contour: #00CC14;
-  
   
     --font-and-border-color: #00CC14;
     --title-font-weight: 785px;
     --main-font-weight: 465px;
-  
-    
-    
   }
-
-/* отмена обводки в авто-темной */
-html.theme-auto {
-  .main__section-label {
-    text-shadow: none;
-    -webkit-text-stroke: 0;
-    text-stroke: 0;
-  }
-}
 }

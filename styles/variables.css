@@ -4,4 +4,6 @@
 :root {
 --main-font: 'Inter-Variable';
 --accidental-font: 'PressStart2P-Regular';
+/* у себя по перфект пикселю 26% */
+--content-margin: 27%
 }

@@ -28,11 +28,9 @@
     <!-- хедер -->
     <header class="header">
       <!-- центрирование заголовка -->
-      <div class="header-container">
-        <!-- ! Смена темы (донт тач ит) -->
-        <h1 class="header__title header__title-one">&lt;/HTML&gt;</h1>
-        <h2 class="header__title header__title-two">закрывающий тег</h2>
 
+        <a href="#" class="header__logo">&lt;/HTML&gt;</a>
+        <h1 class="header__title">закрывающий тег</h1>
         <nav class="theme-menu header__theme-menu">
           <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
           <ul class="theme-menu__list">
@@ -66,21 +64,20 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
 
     <!-- мейн -->
-    <main>
+    <main class="main">
       <!-- ! первая карточка -->
-      <section class="main__section">
-        <h3 class="main__title">
+      <section>
+        <h2 class="main__title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;/HTML&gt;</label>
-          <img
-            class="img_item img_filter-one"
+          <img loading="lazy"
+            class="img_item img_multiple-filter "
             src="./images/keyboard-and-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -96,8 +93,8 @@
             У меня не было особых ожиданий, я, к своему удивлению, не питал иллюзий по поводу быстрого понимания и всё такое. Предстоит еще долгий путь, дольше, чем сам курс. Надеюсь лишь, что не потеряю мотивацию.
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -117,14 +114,14 @@
                   <path
                     class="main-body"
                     d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
-                    fill="#FF0000"
+                    fill="none"
                   />
 
                   <!-- сердцевина сердечка -->
                   <path
                     class="core"
                     d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
-                    fill="white"
+                    fill="none"
                   />
                 </g>
                 <!-- искры, исходящие от сердечка -->
@@ -135,7 +132,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -144,12 +141,12 @@
 
       <!-- ! вторая карточка -->
       <section class="main__section">
-        <h3 class="main__title">1 спринт: Я — чистый лист</h3>
+        <h2 class="main__title">1 спринт: Я — чистый лист</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;/HTML&gt;</label>
-          <img
-            class="img_item img_filter-two"
+          <img loading="lazy"
+            class="img_item img_contrast-filter"
             src="./images/loading-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -167,8 +164,8 @@
             Страха не было, только непонимание. И самое яркое - гриды. Как же я их тогда ненавидел. Сейчас уже легче. Но они таят в себе еще много тайн, которые мне еще предстоит разгадать...
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -206,7 +203,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -215,12 +212,12 @@
 
       <!-- ! третья карточка -->
       <section class="main__section">
-        <h3 class="main__title">1 спринт: А если не получится?</h3>
+        <h2 class="main__title">1 спринт: А если не получится?</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;CSS&gt;</label>
-          <img
-            class="img_item img_filter-three"
+          <img loading="lazy"
+            class="img_item img_saturate-filter"
             src="./images/gloomy-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -236,8 +233,8 @@
             Было круто. Не каждый же день создаешь страницу сайта в первый раз. Он хоть и был простеньким, но таких сайтов довольно много.
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -275,7 +272,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -284,12 +281,12 @@
 
       <!-- ! четвертая карточка -->
       <section class="main__section">
-        <h3 class="main__title">2 спринт: Погоня за идеалом</h3>
+        <h2 class="main__title">2 спринт: Погоня за идеалом</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;desigions&gt;</label>
-          <img
-            class="img_item img_filter-four"
+          <img loading="lazy"
+            class="img_item img_brightness-filter"
             src="./images/glasses-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -307,8 +304,8 @@
             На самом деле тогда казалось, что уже почти всё знаешь, ведь что нужно для жизни, кроме как флексы и гриды? Ха-ха...
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -346,7 +343,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -355,12 +352,12 @@
 
       <!-- ! пятая карточка -->
       <section class="main__section">
-        <h3 class="main__title">2 спринт: О тех, кто рядом</h3>
+        <h2 class="main__title">2 спринт: О тех, кто рядом</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">care</label>
-          <img
-            class="img_item img_filter-five"
+          <img loading="lazy"
+            class="img_item img_invert-filter"
             src="./images/many-cats.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -376,11 +373,11 @@
             правда ли?
           </p>
           <p class="main__paragraph">
-            Это правда. Атмосфера в чатике хорошая, люди тоже. Правда, меня очень сильно тригерили фотографии монитора с телефона... 
+            Это правда. Атмосфера в чатике хорошая, люди тоже. Разве что, меня очень сильно тригерили фотографии монитора с телефона... 
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -418,7 +415,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -427,12 +424,12 @@
 
       <!-- ! шестая карточка -->
       <section class="main__section">
-        <h3 class="main__title">3 спринт: Обходные стратегии</h3>
+        <h2 class="main__title">3 спринт: Обходные стратегии</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;support&gt;</label>
-          <img
-            class="img_item img_filter-six"
+          <img loading="lazy"
+            class="img_item img_hue-rotate-filter"
             src="./images/press-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -448,8 +445,8 @@
            Прошлый проект на самом деле оказался довольно легкий, мотивация на высоте. Но он не знал, что это была единоразовая акция...
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -487,7 +484,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -496,12 +493,12 @@
 
       <!-- ! седьмая карточка -->
       <section class="main__section">
-        <h3 class="main__title">3 спринт: Когда опускаются руки</h3>
+        <h2 class="main__title">3 спринт: Когда опускаются руки</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;life-style: none;&gt;</label>
-          <img
-            class="img_item img_filter-seven"
+          <img loading="lazy"
+            class="img_item img_grayscale-filter"
             src="./images/wtf-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -519,8 +516,8 @@
             Я сам не знаю. Работать и учиться довольно тяжело, у меня сил и работать порой нет - куда там всё совмещать-то? Питался энергией космоса, не иначе.
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -558,7 +555,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -567,12 +564,12 @@
 
       <!-- ! восьмая карточка -->
       <section class="main__section">
-        <h3 class="main__title">«Сейчас я здесь»</h3>
+        <h2 class="main__title">«Сейчас я здесь»</h2>
 
         <div class="main__img-container">
           <label class="main__section-label">&lt;experience&gt;</label>
-          <img
-            class="img_item img_filter-eight"
+          <img loading="lazy"
+            class="img_item img_blur-filter"
             src="./images/christmas-cat.png"
             alt="Пиксельный арт, звездная ночь, припаркованный автодом стоит возле дерева."
           />
@@ -591,8 +588,8 @@
             Надеюсь, всё получится. В проектах иногда бьюсь об стены, которые не могу преодолеть, но, благо, есть где спросить. В этой временной рамке пришлось больше месяца потеть на работе, отчего перешел в другую когорту - всё равно бы ничего не успел. Но всё закончилось, плывем дальше.
           </p>
           <div class="like-container">
-            <button class="card__icon-button">
-              <svg
+            <button type="button" class="card__icon-button">
+              <svg aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -630,7 +627,7 @@
                 />
               </svg>
             </button>
-            <button class="like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -658,8 +655,9 @@
           <use href="./svg/floppy.svg#floppy-memory"></use>
         </svg>
 
-        <p class="dialog_paragraph">Вставьте дискету, чтобы продолжить</p>
+        <p class="dialog_paragraph">Вставьте <br>дискету, чтобы <br>продолжить</p>
       </div>
+      <form method="dialog" class="form_button">
       <button
         class="dialog_button"
         type="button"
@@ -667,6 +665,7 @@
       >
         <span class="button__text"> ОК </span>
       </button>
+    </form>
     </dialog>
 
     <script src="./scripts/like.js"></script>

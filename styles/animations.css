@@ -42,3 +42,93 @@ to {
 opacity: 1;
 }
 }
+
+
+/* фокус сердечка */
+.card__icon-button:focus-visible {
+  border: 2px solid var(--font-and-border-color);
+}
+
+/* состояния сердечка */
+
+/* скрываем искры */
+.sparks {
+  opacity: 0;
+}
+
+/* изменение сердцевины когда убран курсор */
+.heart .core {
+  fill: none;
+  transition: fill 0.3s linear 0.03s;
+}
+
+/* изменение заливки когда убран курсор */
+.heart .main-body {
+  fill: none;
+  transition: fill 0.3s linear;
+}
+
+/* само сердечко */
+.like-icon {
+  cursor: pointer;
+}
+
+/* значение fill для возможности его плавного изменения далее */
+.card__icon-button .core,
+.card__icon-button .main-body {
+  fill: transparent;
+}
+
+/* ховер сердечка (сердцевина) */
+.heart:hover .core {
+  fill: var(--color-accent);
+  transition: fill 0.3s linear 0.03s;
+}
+
+/* ховер сердечка (закраска) */
+.heart:hover .main-body {
+  fill: var(--color-accent);
+  transition: fill 0.3s linear 0.05s;
+}
+
+/* при зажатии */
+.heart:active .core {
+  fill: red;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.heart:active .main-body {
+  fill: red;
+  transition: fill 0.3s linear 0.05s;
+}
+
+/* при нажатии */
+
+.like-icon.is-liked .core {
+  fill: red;
+}
+
+.like-icon.is-liked .main-body {
+  fill: red;
+}
+
+.like-icon.is-liked .contour {
+  fill: red;
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: scaling-heart 0.3s ease-in 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  fill: red;
+  animation: cool-sparks 0.3s ease-in 0.3s;
+}
+
+/* возвращение цвета контура при выключении сердечка */
+.like-icon:disabled .contour {
+  fill: var(--heart-contour);
+  transition: fill 0.1s linear;
+}
